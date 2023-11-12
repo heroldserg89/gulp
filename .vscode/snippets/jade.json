@@ -1,0 +1,16 @@
+{
+  "extends": {
+    "prefix": "ex",
+    "body": [
+      "extends "
+    ],
+    "description": "Extends files"
+  },
+  "include": {
+    "prefix": "in",
+    "body": [
+      "include "
+    ],
+    "description": "Include files"
+  }
+}

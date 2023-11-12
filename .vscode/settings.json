@@ -1,0 +1,30 @@
+{
+  "editor.formatOnSave": true,
+  "stylelint.snippet": [
+    "css",
+    "less",
+    "postcss",
+    "scss"
+  ],
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss"
+  ],
+  "scss.validate": false,
+  "css.validate": false,
+  "less.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "pugFormatter.separatorSpace": false,
+  "files.eol": "\r\n",
+  "editor.snippetSuggestions": "top",
+  "emmet.syntaxProfiles": {
+    "pug": {
+      "attr_quotes": "single"
+    }
+  }
+}

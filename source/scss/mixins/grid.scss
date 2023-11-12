@@ -1,0 +1,36 @@
+$width: 12;
+$break-sm: 576px;
+$break-md: 767px;
+$break-lg: 992px;
+$break-xl: 1200px;
+$break-xxl: 1400px;
+
+@mixin sm-block() {
+  @media screen and (min-width: $break-sm) {
+    @content;
+  }
+}
+
+@mixin md-block() {
+  @media screen and (min-width: $break-md) {
+    @content;
+  }
+}
+
+@mixin lg-block() {
+  @media screen and (min-width: $break-lg) {
+    @content;
+  }
+}
+
+@mixin xl-block() {
+  @media screen and (min-width: $break-xl) {
+    @content;
+  }
+}
+
+@mixin xxl-block() {
+  @media screen and (min-width: $break-xxl) {
+    @content;
+  }
+}

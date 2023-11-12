@@ -1,0 +1,16 @@
+mixin imgResponse(src, ...response)
+  - const srcParts = src.split('.')
+  - const [srcFirstPart, extname] = srcParts
+  - const path = './images/'
+  - let type = extname
+
+    if extname === 'jpg'
+      - type = 'jpeg'
+    picture
+      if response
+        each item in response
+          source(media=`(min-width:${item}px)`, srcset=`${path + srcFirstPart}-${item}.webp, ${path + srcFirstPart}-${item}@2x.webp 2x`, type='image/webp')
+          source(media=`(min-width:${item}px)`, srcset=`${path + srcFirstPart}-${item}.${extname}, ${path + srcFirstPart}-${item}@2x.${extname} 2x`, type=`image/${type}`)
+      source(srcset=`${path + srcFirstPart}.webp, ${path + srcFirstPart}@2x.webp`, type='image/webp')
+      img(src=`${path + srcFirstPart}.${extname}`, srcset=`${path + srcFirstPart}@2x.${extname} 2x`, loading='lazy', width='', height='', alt='')&attributes(
+        attributes)
