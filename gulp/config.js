@@ -27,6 +27,7 @@ const config = {
   setEnv() {
     this.isProd = process.argv.includes('--prod');
     this.isDev = !this.isProd;
+    this.isBuildFonts = process.argv.includes('--fonts');
   },
 };
 

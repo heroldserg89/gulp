@@ -22,7 +22,7 @@ export const fontsBuild = () => (
     .pipe(gulp.dest(config.dest.fonts))
 );
 
-export const ttfFontsWatch = () => {
+export const fontsWatch = () => {
   gulp.watch(`${config.src.fonts}/*.ttf`, ttfFontsBuild);
   gulp.watch(`${config.src.fonts}/*.{woff,woff2}`, fontsBuild);
 };
