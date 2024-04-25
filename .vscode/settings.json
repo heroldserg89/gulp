@@ -16,7 +16,7 @@
   "css.validate": false,
   "less.validate": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": "explicit"
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "pugFormatter.separatorSpace": false,
