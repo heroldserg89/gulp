@@ -1,0 +1,6 @@
+@use "./scss" as v;
+
+:root {
+  --container-max-width: 1200px;
+  --font-family: #{v.$font-family}, sans-serif;
+}

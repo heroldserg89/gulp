@@ -13,6 +13,7 @@ import config from '../config.js';
 const sass = gulpSass(darsSass);
 const sassBuild = () => (
   gulp.src(`${config.src.sass}/style.scss`, { sourcemaps: config.isDev })
+
     .pipe(plumber(
       notify.onError({
         title: 'SCSS',
@@ -20,6 +21,7 @@ const sassBuild = () => (
       }),
     ))
     .pipe(sass({
+      silenceDeprecations: ['legacy-js-api'],
       includePaths: ['./node_modules'],
     }))
     .pipe(gulpif(config.isProd, gcmq()))

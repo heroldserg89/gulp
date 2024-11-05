@@ -1,5 +1,4 @@
-@import "mixins";
-@import "vendors";
-@import "variables";
-@import "base";
-@import "components";
+@use "vendors";
+@use "variables/css";
+@use "base/base";
+@use "components/components";
