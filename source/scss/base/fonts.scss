@@ -1,4 +1,3 @@
 @use "../mixins";
 @use "../variables/scss";
-
 @include mixins.font-face(#{scss.$font-family}, #{scss.$font-family}400, 400, normal);
