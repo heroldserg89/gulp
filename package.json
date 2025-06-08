@@ -6,7 +6,7 @@
   "type": "module",
   "lint-staged": {
     "*.js": "eslint --fix",
-    ".source/**/*.pug": "pug-lint",
+    "source/**/*.pug": "pug-lint",
     "*.scss": "stylelint --fix"
   },
   "scripts": {
